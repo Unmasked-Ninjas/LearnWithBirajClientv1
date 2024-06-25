@@ -12,7 +12,7 @@ const FormSubmission = () => {
         query,
       };
       const response = await axios.post(
-        "https://walrus-app-bdiru.ondigitalocean.app/api/v1/query/postquery",
+        "http://localhost:5000/api/v1/query/postquery",
         sendingData
       );
       if (response.status === 201) {

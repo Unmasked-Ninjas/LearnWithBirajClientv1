@@ -37,7 +37,7 @@ const Form = () => {
     };
     try {
       const response = await axios.post(
-        "https://walrus-app-bdiru.ondigitalocean.app/api/v1/students/register",
+        "http://localhost:5000/api/v1/students/register",
         sendingData
       );
       if (response.status === 201) {
